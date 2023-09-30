@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    tools:context=".MainMenuActivity">
+
+
+    <TextView
+        android:id="@+id/menuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Menu"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bmiImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/my_square"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTextView"
+        app:srcCompat="@drawable/bmi" />
+
+    <TextView
+        android:id="@+id/bmiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:text="BMI Calculator"
+        app:layout_constraintEnd_toEndOf="@+id/bmiImageView"
+        app:layout_constraintStart_toStartOf="@+id/bmiImageView"
+        app:layout_constraintTop_toBottomOf="@+id/bmiImageView" />
+
+    <ImageView
+        android:id="@+id/chatImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/my_square"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTextView"
+        app:srcCompat="@drawable/chat"/>
+
+    <TextView
+        android:id="@+id/chatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Chat"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/chatImageView"
+        app:layout_constraintStart_toStartOf="@+id/chatImageView"
+        app:layout_constraintTop_toBottomOf="@+id/chatImageView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
